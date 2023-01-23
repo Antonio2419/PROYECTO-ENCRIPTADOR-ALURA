@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #0A3871;
+    resize: none;
+}
+body{
+    
+    font-size: 22px;
+    background: linear-gradient(#b4dffc,#a0f3f3, #9de1fac9, rgb(42, 241, 241));
+}
+
+
+
+.contenedor:hover img{
+    transform: rotate(360deg);
+}
+img{
+  
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(216, 216, 216);
+    transform: rotate(-30deg);
+    transition: all .3s;
+}
+h4{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    font-size: 62px;
+    color: rgb(6, 29, 134);
+}
+main{
+ 
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 25px;
+}
+.parte1{
+    position: relative;
+    width: 65%;
+    height: 700px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.parte1::after{
+    content: "";
+    position: absolute; 
+    width: 75%;
+    height: 900px;
+    background-image: conic-gradient(transparent,aqua,transparent, rgb(27, 134, 177));
+    animation: rotate 5s linear infinite;
+}
+.parte1::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 900px;
+    background-image: conic-gradient(transparent,transparent,transparent, aqua);
+    animation: rotate 5s linear infinite;
+    animation-delay: -10s;
+}
+@keyframes rotate{
+    0%{transform: rotate(20deg);}
+    100%{transform: rotate(360deg);} 
+}
+span{
+    position: absolute;
+    inset: 6px;
+    border-radius: 16px;
+    background: linear-gradient(#1ea9d3, #0e6b96);
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.area{
+    margin:20px 10px 0;
+    background: transparent;
+    border-color: aqua;
+    width: 90%;
+    height: 70%;
+    font-size: 32px;
+    border-radius: 30px;
+    outline: none; 
+    padding: 10px;
+}
+.solo-letras{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.5;
+    font-size: 16px;
+}
+
+.solo-letras:before{
+    content:"☻"
+}
+
+.solo-letras:first-child{
+    font-weight: bold;
+}
+    
+
+.encriptar, .desencriptar{
+    background-color: aqua;
+    border-color:unset; 
+    font-size: 22px;
+    border:unset;
+    width: 38%;
+    height: 8%;
+    border-radius: 20px;
+}
+
+.encriptar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.44), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(1, 71, 105);
+    color: aqua;
+}
+.desencriptar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.44), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(1, 71, 105);
+    color: aqua;
+     
+}
+ button{
+     margin-left: 2rem;
+ }
+
+.parte2{
+    position: relative;
+    width: 40%;
+    height: 700px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.parte2::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1100px;
+
+    background-image: conic-gradient(transparent,aqua,transparent, hwb(195 4% 31%));
+    animation: rotate 2s linear infinite;
+}
+.parte2::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1100px;
+   
+    background-image: conic-gradient(transparent,aqua,transparent, #25afaf);
+    animation: rotate 2s linear infinite;
+    animation-delay: -10s;
+} 
+.logo-muneco{
+    width: 250px;
+    height: 200px;
+    padding-top: 100px;
+    box-shadow: 2px 2px 5px rgb(216 216 216 / 0%);
+    transform: rotate(-30deg);
+    transition: all .3s;
+    
+}
+.logo-muneco:hover img{
+    transform: rotate(0);
+}
+
+    
+
+.ningun-mensaje{
+    margin: 2em 0 3em ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.ingresa-texto{
+    margin: 5em 0 6em 0;
+    text-align: center;
+    font-size: 22px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mensaje-encriptado{
+    margin: 2em 0 0  0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+   
+}
+.resultado-texto{
+    background: transparent;
+    border-color: aqua;
+    margin: 1em 0em 3em 0em;
+    width: 98%;
+    height: 50%;
+    text-align: center;
+    outline: none; 
+    font-size: 22px;
+    border-radius: 50px;
+}
+.btn-copiar{
+    width: 58%;
+    height: 8%;
+    
+    border: none;
+    font-size: 32px;
+    background-color: #08549b;
+    color: rgb(17, 8, 8);
+    padding: 16px 22px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.btn-copiar {
+    background-color: aqua; 
+    color: none;
+}
+
+.btn-copiar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.44), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(1, 71, 105);
+    color: aqua;
+}
+footer{
+    text-align: center;
+}
+.fondo,.antonio{
+    color: aliceblue;
+}
+.ocultar{ 
+    display: none;
+}
+@media screen and (max-width: 525px) {
+  .logo-alura, .solo-letras, .logo-muneco, .ningun-mensaje, .ingresa-texto{
+    display: none;
+   }
+   .contenedor {
+    width: 100%;
+   }
+
+    main{
+        Width: 100%;
+        Height:733px;
+        Top:588px;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: unset;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+     h4{
+        font-size: 22px;
+     }
+
+    .parte1 {
+        width: 100% ;
+    }
+    
+    .area {
+        height: 60%;
+        margin-left: 0;
+        font-size: .7rem;
+    }
+
+    .parte2 {
+        width: 100%;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .encriptar, .desencriptar {
+        font-size: .5rem;
+        margin-left: 0;
+        flex: 1 1 auto;
+        padding: .2rem 0;
+    }
+
+    footer p{
+        font-size: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .mensaje-encriptado {
+        margin-top: .5rem;
+        font-size: .8rem;
+    }
+
+    .resultado-texto {
+        margin: 1rem 0 0 0;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .btn-copiar {
+        width: 100%;
+        margin-left: 0;
+        font-size: .65rem;
+        padding: .2rem .5rem;
+    }
+
+
+}

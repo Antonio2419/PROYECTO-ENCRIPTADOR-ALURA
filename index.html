@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Encriptado</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+</head>
+
+<body  class="dark">
+    <header class="contenedor">
+        <div class="giro-imagen">
+        <h4 class="titulo-alura">Encriptador Alura</h4>
+        <img src="imagen/Logo.png" class="logo-alura" alt="logo-alura">
+        </div>
+         <div class="modo" id="modo">
+          <i class="fas fa-toggle-on"></i>
+         </div>
+
+        <main >
+          <section  class="parte1">
+                <span >
+                    <textarea class="area" onkeypress="return SoloLetras(event);" onKeyUP="this.value=this.value.toLowerCase();" required onkeypress="return Especial(event);"  placeholder="Ingrese el texto aqui"></textarea>
+                    <p class="solo-letras">solo letras minusculas y sin acentos</p>
+                    <div class="botones">
+                     <button type="encriptar" class="encriptar" value="Encriptar">Encriptar</button>
+                     <button type="desencriptar"class="desencriptar" value="desencriptar" >Desencriptar</button>
+                    </div>
+                </span>
+           
+          </section>
+          <section class="parte2">
+            <span class="segunada-parte">
+              <img src="imagen/Muñeco.png" class="logo-muneco" alt="logo-muneco">
+              <H3 class="ningun-mensaje">Ningun mensaje fue encontrado</H3>
+              <p class="ingresa-texto">Ingresa texto que desees encriptar o desencripta</p>
+              <div class="resulto-encriptado"></div>
+                <h3 class="mensaje-encriptado">Mensaje Encriptado</h3>
+                <textarea class="resultado-texto copy"cols="30" rols="20"></textarea>
+                <button class="btn-copiar"  value="Copiar">Copiar</button>
+              </div> 
+            </span>
+          </section> 
+             
+        </main>
+        
+        <footer>
+          <p class="antonio">Antonio Merida</p>
+          <p class="fondo">alura@todos los derechos reservados</p>
+        </footer>
+        <script src="js/encriptado.js"></script>
+        <script src="js/main.js"></script>
+    </header>
+    
+</body>
+
+</html>

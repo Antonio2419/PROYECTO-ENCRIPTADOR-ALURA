@@ -1,0 +1,16 @@
+.modo{
+    width:10px;
+    font-size: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dark {
+    background: linear-gradient(#083c5f,#023636, #043a4dc9, rgb(3, 77, 77));
+}
+.dark h4{
+    color: white;
+}
+.dark i{
+    color: aqua
+}
